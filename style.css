@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Scientific Calculator LCD", sans-serif !important;
+}
+
+p {
+   font-family: "Scientific Calculator LCD", sans-serif;
+   font-size: 2rem;
+   color:  rgba(115, 185, 224, 0.854);
+}
+.calc-body {
+    margin-top: 60px;
+    width: 450px;
+    height: 500px;
+    background-color: rgb(207, 202, 209);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 4px 1px rgb(92 91 91);
+
+}
+
+.screen {
+    background-color: rgb(51, 78, 65);
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+p.num {
+    margin-left: 5px;
+    font-family: 'Scientific Calculator LCD', sans-serif;
+    color: rgb(16, 245, 16);
+    font-size: 30px;
+    white-space: pre-line;
+    margin-left: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.func {
+    width: 400px;
+    height: 380px;
+
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+
+button {
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 1px rgb(92 91 91);
+    height: 60px;
+    font-size: 18px;
+    border: 0;
+}
+
+button:active {
+    background-color: rgb(127, 127, 127);
+}
+
+.clear {
+    display: block;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(255, 111, 111);
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+.equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: rgba(18, 253, 128, 0.5);
+}
+
